@@ -45,7 +45,7 @@ module.exports={
             },
             //静态资源引入  limit:10240小于10kb的就打包进来，大于10kb就不打包进来
             {
-                test:/\.(png|jpeg|gif|jpg|svg|.mp3)$/,
+                test:/\.(png|jpeg|gif|jpg|svg|.mp3|ttf)$/,
                 use:[
                     {loader:'url-loader',options:{limit:10240}}
                     ]

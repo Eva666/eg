@@ -5,6 +5,9 @@ import Vue from 'vue';
 //导入mint-ui仅仅导入js相关的东西，如要导入css,还要导入style
 import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
+import 'mui/dist/css/mui.css';
+//公共footer组件中的商品购买和购物车图标是mui扩展，所以要导入该css,否则显示不出来
+import 'mui/examples/hello-mui/css/icons-extra.css';
 //2.引入根组件（App），根组件要渲染到index.html中
 import AppComponent from '../compnonent/App.vue';
 import Header from '../compnonent/common/header.vue';
